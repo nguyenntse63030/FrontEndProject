@@ -1,0 +1,297 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>MENU</title>
+	<style>
+		*{margin: 0px;
+		  padding: 0px;
+		  }
+		#main
+		{
+			background-image: url(Hình/Outer-space-Stars-l.jpg);
+			width: 100%; height: 65px;
+			float: left;
+			box-sizing: border-box;
+		}
+		/*===============================*/
+		#logo
+		{
+			margin-top: 10px;
+			margin-left: 2.5%;
+			/*border: 2px solid white;*/
+			width: 5%; height: 50px;
+			float: left;
+			box-sizing: border-box;
+		}
+		#logo img
+		{
+			width: 100%; height: 50px;
+		}
+		/*===============================*/
+		#menu
+		{
+			margin-top: 10px;
+			margin-left: 2.5%;
+			/*border: 2px solid wheat;*/
+			width: 30%; height: 50px;
+			float: left;
+			box-sizing: border-box;
+			color: white;
+		}
+		#home
+		{
+			margin-top: 3px;
+			margin-left: 2%;
+			width: 10%; height: 40px;
+			float: left;
+			box-sizing: border-box;
+			/*border: 1px solid white;*/
+		}
+		#home img
+		{
+			width: 100%; height: 40px;
+		}
+		#home:hover
+		{
+			/*border: 1px solid white;*/
+			box-sizing: border-box;
+			opacity: 1;
+			position: relative;
+			z-index: 1;
+		}
+		#tl
+		{
+			width: 30%; height: 40px;
+			float: left;
+			margin-top: 3px;
+			margin-left: 1%;
+			box-sizing: border-box;
+			/*border: 1px solid white;*/
+			text-align: center;
+			font-size: 20px;
+			padding-top: 10px;
+		}
+		#qg
+		{
+			width: 30%; height: 40px;
+			float: left;
+			margin-top: 3px;
+			margin-left: 1%;
+			box-sizing: border-box;
+			/*border: 1px solid white;*/
+			text-align: center;
+			font-size: 20px;
+			padding-top: 10px;
+		}
+		.hidden
+		{
+			float: left;
+			margin-top: 10px;
+			width: 100%; height: 10px;
+			opacity: 0;
+			overflow: hidden;
+			color: white;
+			transition: all 0.8s;
+		}
+		.hidden ul
+		{
+			list-style-type: none;
+			margin-top: 7px;
+			width: 100%; height: auto;
+			transition: all 1s;
+		}
+		.hidden li
+		{
+			background-color: black;
+			border: 1px solid white;
+			width: 100%; height: 30px;
+			float: left;
+			box-sizing: border-box;
+			color: white;
+/*			margin-left: 10%;*/
+		}
+		li:hover
+		{
+			border: 2px solid white;
+			opacity: 1;
+			position: relative;
+			z-index: 1;
+			box-sizing: border-box;
+		}
+		#tl:hover .hidden
+		{
+			overflow: visible;
+			height: 120px;
+			opacity: 1;
+			position: relative;
+			z-index: 1;
+		}
+		#tl:hover
+		{
+			border: 2px solid white;
+			opacity: 1;
+			position: relative;
+			z-index: 1;
+			box-sizing: border-box;
+		}
+		#qg:hover .hidden
+		{
+			overflow: visible;
+			height: 120px;
+			opacity: 1;
+			position: relative;
+			z-index: 1;
+		}
+		#qg:hover
+		{
+			border: 2px solid white;
+			opacity: 1;
+			position: relative;
+			z-index: 1;
+			box-sizing: border-box;
+		}
+		/*===============================*/
+		#search
+		{
+			margin-top: 10px;
+			margin-left: 2.5%;
+			/*border: 2px solid #FF0000;*/
+			width: 30%; height: 50px;
+			float: left;
+			box-sizing: border-box;
+		}
+		#search input
+		{
+			background-color: black;
+			float: left;
+			margin-top: 3px;
+			box-sizing: border-box;
+			color: white;
+			border: 1px solid white;
+		}
+		#find
+		{
+			width: 70%; height: 40px;
+			margin-right: 1%;
+			font-size: 20px;
+		}
+		#enter
+		{
+			width: 25%; height: 40px;
+			border-radius: 5%;
+			text-align: center;
+			font-size: 20px;
+		}
+		#enter:active
+		{
+			background-color: white;
+			color: black;
+			opacity: 1;
+			position: relative;
+			z-index: 1;
+		}
+		#find:active
+		{
+			border: 2px solid white;
+			opacity: 1;
+			position: relative;
+			z-index: 1;
+		}
+		/*===============================*/
+		#login
+		{
+			margin-top: 10px;
+			margin-left: 2.5%;
+			/*border: 2px solid white;*/
+			width: 20%; height: 50px;
+			float: left;
+			box-sizing: border-box;
+		}
+		#login input
+		{
+			width: 42.5%; height: 40px;
+			float: left;
+			margin-top: 3px;
+			margin-left: 5%;
+			border-radius: 10%;
+			background-color: black;
+			color: white;
+			border: 1.5px dotted white;
+			font-size: 100%;
+		}
+		#login input:hover
+		{
+			border: 1.5px solid white;
+			opacity: 1;
+			position: relative;
+			z-index: 1;
+		}
+		#login input:active
+		{
+			background-color: white;
+			color: black;
+			opacity: 1;
+			position: relative;
+			z-index: 1;
+		}
+		
+		#hidden>ul>a
+		{
+			text-decoration: none;
+			color: white;
+		}
+	/*===============================*/
+		
+	</style>
+	<script>
+	</script>
+</head>
+
+<body>
+	<div id="main">
+		<div id="logo">
+			<img src="Hình/logo2.png">
+		</div>
+		<div id="menu">
+			<div id="home">
+				<a href="TrangChu.html" target="_top">
+					<img src="Hình/Icon-home.png">
+				</a>
+				
+			</div>
+			<div id="tl">
+				<span>THỂ LOẠI</span>
+				<div class="hidden">
+					<ul>
+						<a href="NgonTinh.html" target="_blank"><li>Ngôn tình</li></a>
+						<a href="VienTuong.html" target="_blank"><li>Viễn tưởng</li></a>
+						<a href="HanhDong.html" target="_blank"><li>Hành động</li></a>
+					</ul>
+				</div>
+			</div>
+			<div id="qg">
+				<span>QUỐC GIA</span>
+				<div class="hidden">
+					<ul>
+						<a href="TrungQuoc.html" target="_blank"><li>Trung Quốc</li></a>
+						<a href="AuMy.html" target="_blank"><li>Âu Mỹ</li></a>
+						<a href="HanQuoc.html" target="_blank"><li>Hàn quốc</li></a>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="search">
+			<form method="get" action="http://www.google.com/search">
+     <input type="text" id="find" name="q" placeholder="Nhập tên phim, tên diễn viên">
+     <input type="submit" id="enter" name="btng" value="Tìm kiếm" formtarget="_blank">
+</form>
+		</div>
+		<div id="login">
+			<a href="dangnhap.html" target="_blank"><input type="button" value="ĐĂNG NHẬP" class="input"></a>
+			<a href="dangki.html" target="_blank"><input type="button" value="ĐĂNG KÍ" class="input"></a>
+		</div>
+	</div>
+	
+</body>
+</html>

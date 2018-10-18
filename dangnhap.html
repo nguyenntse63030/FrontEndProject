@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>ĐĂNG NHẬP</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+			#main
+			{
+				width: 50%; height: 550px	;
+				background-image: url(Hình/9b516f4441a7bfb5174b33ebf74fc1d6_49102622.freebackgrounds5.jpg);
+				background-repeat: no-repeat;
+				color: white;
+				float: left;
+				margin: 0px 25% 100px 25%;
+				box-sizing: border-box;
+			}
+			.infor
+			{
+				width: 80%; height: 40px;
+				float: left;
+				margin: 10px 0px 10px 10%;
+				font-size: 20px;
+				border: 2px solid white;
+			}
+			.title
+			{
+				width: 90%; height: auto;
+				float: left;
+				margin: 10px 0px 3px 10%;
+				font-size: 20px;
+			}
+			#submit
+			{
+				width: 20%; height: 50px;
+				float: both;
+				margin: 10px 0px 10px 40%;
+				font-size: 20px;
+				border-radius: 10%;
+			}
+			#title
+			{
+				width: 90%; height: auto;
+				font-size: 40px;
+				text-align: center;
+				float: left;
+				margin: 40px 0px 10px 5%;
+			}
+			.other
+			{
+				width: 42.5%; height: 50px;
+				float: left;
+				margin: 30px 0px 10px 5%;
+			}
+			.other img
+			{
+				width: 15%; height: 50px;
+				float: left;
+				box-sizing: border-box;
+			}
+			.other span
+			{
+				width: 85%; height: 50px;
+				float: left;
+				box-sizing: border-box;
+				color: white;
+				font-size: 100%	;
+				padding-left: 5%;
+				padding-top: 15px;
+			}
+			#gg
+			{
+				background-color: red;
+			}
+			#fb
+			{
+				background-color: blue;
+			}
+			#error
+			{
+				width: 100%; height: auto;
+				text-align: center;
+				color: red;
+				float: left;
+				visibility: hidden;
+			}
+			#s
+			{
+				width: 100%; height: auto;
+				float: left;
+				text-align: center;
+				font-size: 20px;
+				margin-top: -1	0px;
+			}
+			#menu
+			{
+				width: 100%; height: 200px;
+				border: none;
+			}
+		</style>
+   		<script>
+			function test()
+			{
+				var ID = document.getElementById("ID");
+				var error  = document.getElementById("error");
+				var pattID = /^[A-Za-z0-9]+$/;
+				
+				var password = document.getElementById("password");
+				var pattPass = /[A-Z]+/;
+				
+				if(pattID.test(ID.value)==false || pattPass.test(password.value)==false || password.value.length < 8)
+					{
+						error.style.visibility = "visible";
+					}
+				else
+					error.style.visibility = "hidden";
+			}
+		</script>
+    </head>
+    <body>
+       <div>
+       		<iframe id="menu" src="menu.ass_fixing.html"></iframe>
+       </div>
+        <div id="main">
+        	<span id="title">ĐĂNG NHẬP</span>
+        <form method="get">
+        	<span class="title">TÊN ĐĂNG NHẬP</span>
+        	<input type="text" name="TÊN ĐĂNG NHẬP" class="infor" id="ID">
+        	
+        	<span class="title">MẬT KHẨU</span>
+        	<input type="password" name="MẬT KHẨU" class="infor" id="password">
+        	<input type="button" value="ĐĂNG NHẬP" id="submit" onClick="test()">
+        	<span id="error">*Tên đăng nhập hoặc Mật khẩu sai</span>
+        </form>
+        <span id="s">&#9734 &#9734 &#9734 Hoặc đăng nhập bằng &#9734 &#9734 &#9734</span>
+        <a href="https://accounts.google.com/signin" target="new">
+        	<div id="gg" class="other">
+        		<img src="Hình/icon_gg.ico">
+        		<span>ĐĂNG NHẬP BẰNG GOOGLE</span>
+        	</div>
+        </a>
+        <a href="https://www.facebook.com/login" target="new">
+        	<div id="fb" class="other">
+        		<img src="Hình/icon_fb.png">
+        		<span>ĐĂNG NHẬP BẰNG FACEBOOK</span>
+        	</div>
+        </a>
+        
+        </div>
+    </body>
+</html>

@@ -1,0 +1,198 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>ĐĂNG KÍ</title>
+	<style>
+		
+		*{margin: 0px;
+			padding:0px;}
+		#main
+		{
+			width: 60%; height: 1000px;
+			background-image: url(Hình/depositphotos_4734840-stock-photo-white-halloween-background.jpg);
+			background-repeat: no-repeat;
+			float: center;
+			box-sizing: border-box;
+/*			margin: 0px auto 100px auto;*/
+			margin-left: 23%; 
+			margin-right: 20%;
+			color: black;
+		}
+		#title
+		{
+			width: 90%; height: auto;
+			font-size: 40px;
+			text-align: center;
+			float: left;
+			margin: 40px 0 10px 5%;
+			box-sizing: border-box;
+			word-spacing: 5px;
+		}
+		.title
+		{
+			width: 90%; height: auto;
+			float: left;
+			margin: 10px 0px 3px 5%;
+			font-size: 25px;
+			box-sizing: border-box;
+		}
+		.infor
+		{
+			width: 80%; height: 40px;
+			float: left;
+			margin: 10px 0px 10px 5%;
+			font-size: 20px;
+		}
+		.error
+		{
+			width: 90%; height: auto;
+			float: left;
+			margin: 3px 0px 3px 5%;
+			font-size: 20px;
+			box-sizing: border-box;
+			color: red;
+			visibility: hidden;
+		}
+		#submit
+		{
+/*			border: 1px solid #EBE;*/
+			width: 15%; height: 50px;
+			float: both;
+			margin: 10px 0px 10px 37%;
+			font-size: 20px;
+			border-radius: 10%;
+		}
+		.other
+		{
+			width: 35%; height: 50px;
+			float: left;
+			margin: 50px 0px 10px 6.5%;
+			background-color: aqua;
+		}
+		.other img
+		{
+			width: 15%; height: 50px;
+			float: left;
+			box-sizing: border-box;
+		}
+		.other span
+		{
+			width: 85%; height: 50px;
+			float: left;
+			box-sizing: border-box;
+			color: white;
+			font-size: 100%	;
+			padding-left: 5%;
+			padding-top: 15px;
+		}
+		#gg
+		{
+			background-color: red;
+		}
+		#fb
+		{
+			background-color: blue;
+		}
+		#s
+			{
+/*				border: 1px solid red;*/
+				width: 50%; height: auto;
+				float: left;
+				text-align: center;
+				font-size: 20px;
+				margin-top: -1;
+				margin-left: 20%;
+			}
+		#menu{
+		height: 200px;
+		width: 100%;
+		margin-bottom: 1%;
+		border: none;
+		
+	}
+	</style>
+	<script>
+		function testName()
+		{
+			var name = document.getElementById("name");
+			var errorName = document.getElementById("errorName");
+			var pattname = /^[A-Za-z]+([ ][A-Za-z]+)*$/;
+			if(pattname.test(name.value)==false)
+				{
+					errorName.style.visibility = "visible";
+				}
+			else
+				errorName.style.visibility = "hidden";
+			//====================================================
+			var ID = document.getElementById("ID");
+			var errorID  = document.getElementById("errorID");
+			var pattID = /^[A-Za-z0-9]+$/;
+			if(pattID.test(ID.value)==false)
+				{
+					errorID.style.visibility = "visible";
+				}
+			else
+				errorID.style.visibility = "hidden";
+			//====================================================
+			var password = document.getElementById("password");
+			var errorPass = document.getElementById("errorPass");
+			var pattPass = /[A-Z]+/;
+			if(pattPass.test(password.value)==false || password.value.length < 8)
+				{
+					errorPass.style.visibility = "visible";
+				}
+			else
+				errorPass.style.visibility = "hidden";
+			//=====================================================
+			var confirm = document.getElementById("confirm");
+			var error = document.getElementById("error");
+			if(confirm.value!=password.value)
+				error.style.visibility = "visible";
+			else
+				error.style.visibility = "hidden";
+		}
+	</script>
+</head>
+
+<body>
+<div id="header">
+	<iframe id="menu" src="menu.ass_fixing.html"></iframe>
+	</div>
+	<div id="main">
+		<span id="title">ĐĂNG KÍ</span>
+		<form method="get">
+			<span class="title">Họ và Tên</span>
+			<input type="text" class="infor" id="name">
+			<span class="error" id="errorName">Tên không hợp lệ</span>
+			
+			<span class="title">Tên đăng nhập</span>
+			<input type="text" class="infor" id="ID">
+			<span class="error" id="errorID">Tên đăng nhập không hợp lệ</span>
+			
+			<span class="title">Mật khẩu</span>
+			<input type="password" class="infor" id="password">
+			<span class="error" id="errorPass">Mật khẩu phải gồm 8 kí tự và chứa ít nhất 1 kí tự in hoa</span>
+			
+			<span class="title">Xác nhận mật khẩu</span>
+			<input type="password" class="infor" id="confirm">
+			<span class="error" id="error">Mật khẩu không trùng khớp. Nhập lại</span>
+			
+			<input type="button" value="ĐĂNG KÍ" id="submit" onClick="testName()">
+		</form>
+		<span id="s">&#9734 &#9734 &#9734 Hoặc đăng nhập bằng &#9734 &#9734 &#9734</span>
+		<a href="https://accounts.google.com/signin" target="new">
+        	<div id="gg" class="other">
+        		<img src="Hình/icon_gg.ico">
+        		<span>ĐĂNG NHẬP BẰNG GOOGLE</span>
+        	</div>
+        </a>
+        <a href="https://www.facebook.com/login" target="new">
+        	<div id="fb" class="other">
+        		<img src="Hình/icon_fb.png">
+        		<span>ĐĂNG NHẬP BẰNG FACEBOOK</span>
+        	</div>
+        </a>
+	</div>
+</body>
+</html>

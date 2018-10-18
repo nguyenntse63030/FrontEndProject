@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+<title>BoLoy.com</title>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<style>
+	#header iframe{
+		position: relative;
+		left: -85px;
+		top: -20px;
+		border: none;
+	
+	}
+	#trailer {
+		position: relative;
+		top: -85px;
+	}
+	body{
+		padding: -10px;
+	}
+	
+	
+</style>
+<link href="Assignment_fixing_giaodiensang.css" rel="stylesheet">
+<script src="Assignment.js">
+</script>
+</head>
+
+<body>
+<div id="main">
+<div id="header">
+	<iframe  width="100%" height="170px" scrolling="no" src="menu.ass_fixing.html"></iframe>
+</div>
+<div id="mid">
+	<iframe  width="100%" height="500"  src="test.html" scrolling="no"></iframe>
+</div>
+<h1><marquee scrollamount="10">HAPPY HALLOWEEN</marquee></h1>
+<h1 id="phimbo"> Phim bộ mới cập nhật</h1>
+<div id="menuphim">
+	<iframe width="100%" height="530" src="mainphim1.html" scrolling="no"></iframe>
+</div>
+<div id="trailer" onClick="stoptrailer()">
+	<video width="100%" height="350" autoplay id="videotrailer">
+		<source src="Hình/trailer.mp4" id="srctrailer">
+	</video>
+</div>
+<div id="menulistphim">
+	<span>&#9755 Xem nhiều nhất tuần qua &#9754</span>
+</div>
+<div id="listphim">
+	<div class="khunglistphim" onClick="playtrailer0()">
+		<img src="Hình/thor.jpg">
+		<div class="content">
+		<p >Thor</p>
+		<p >Thần sấm</p>
+		<p >150 phút</p>
+		</div>
+	</div>
+	<div class="khunglistphim" onClick="playtrailer1()">
+		<img src="Hình/avengers2.jpg">
+		<div class="content">
+			<p>Avengers 2</p>
+			<p>Cuộc chiến giữa các siêu anh hùng</p>
+			<p>148 phút</p>
+		</div>
+	</div>
+	<div class="khunglistphim" onClick="playtrailer2()">
+		<img src="Hình/captain.jpg">
+		<div class="content">
+			<p>Captain Ameria 2</p>
+			<p>Nội chiến siêu anh hùng</p>
+			<p>152 phút</p>
+		</div>
+	
+	</div>
+	<div class="khunglistphim" onClick="playtrailer3()">
+		<img src="Hình/spider2.jpg">
+		<div class="content">
+			<p>Amazing spider-man 2</p>
+			<p>Sự trỗi dậy của người nhện</p>
+			<p>155 phút</p>
+		</div>
+	
+	</div>
+	<div class="khunglistphim" onClick="playtrailer4()">
+		<img src="Hình/bo4.jpg">
+		<div class="content">
+			<p>Fantastic Four</p>
+			<p>Bộ tứ siêu đẳng</p>
+			<p>106 phút</p>
+		</div>
+	
+	</div>
+	<div class="khunglistphim" onClick="playtrailer5()">
+		<img src="Hình/superman.jpg">
+		<div class="content">
+			<p>Man of Steel</p>
+			<p>Người đàn ông thép</p>
+			<p>143 phút</p>
+		</div>
+	
+	</div>
+</div>
+<h1 id="phimle"> Phim lẻ mới cập nhật</h1>
+<iframe id="menuphim1" src="mainphim_after.html" style="float: both;width: 70%;height: 600px;border: none" scrolling="no" ></iframe>
+</div>
+<div id="footer">
+	<iframe width="100%" height="250px" scrolling="no" src="last.html"></iframe>
+</div>
+</body>
+</html>

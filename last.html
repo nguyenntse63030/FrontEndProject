@@ -1,0 +1,162 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<style>
+	body {margin: 0px;}
+	#nearlast	{
+					width: 100%;	height: 46px;
+/*					border: 1px solid black;*/
+					float: left;
+					box-sizing: border-box;
+					background-color: #2F2F2F;
+					border-bottom: 1.5px solid black;
+				}
+
+	#in	{
+			width: 1400px; height: 46px;
+			float: left;
+			box-sizing: border-box;
+			text-transform: uppercase;
+			margin-left: 25px;
+/*			border: 1px solid green;*/
+		}
+	
+	#in>a {
+			text-decoration: none;
+			font-size: 17px;
+			color: white;
+			list-style-type: none;
+			float: left;		
+/*			border: 1px solid blue;*/
+			margin: 12.5px 50px auto 0px;
+			text-transform: uppercase;
+		  }
+	#in>a:hover {
+					color: chartreuse;
+				}
+	
+	#last	{
+				width: 100%; height: 200px;
+				float: left;
+				box-sizing: border-box;
+				background-color: black;
+				background-image:url(Hình/spotlight-black-NR.jpg) ;
+				/*background-size: contain;*/
+				background-repeat: no-repeat;
+				background-size: cover;
+/*				background-position: 0px -350px;*/
+				
+			}
+	
+	
+	#logo 	{
+				position: relative;
+				top: 30px;
+				float: left;
+				box-sizing: border-box;
+				margin-left: 25px;
+			}
+	
+	#text 	{
+				width: 500px;	height: 100px; 
+				color: white;
+				font-size: 20px;
+				float: left;
+				box-sizing: border-box;
+				position: relative;
+				top: 50px;
+				margin-left: 20px;
+			}
+	
+	#qc
+		{
+			width: 20%; height: 160px;
+			background-color: #9100FF;
+			float: right;
+			margin-right: 300px;
+			visibility: hidden;
+			border-radius: 5%;
+			color: aquamarine;
+		}
+		#qc p
+		{
+			padding-left: 2%;
+		}
+		input
+		{
+			width: 100%; height: 30px;
+			background-color: blue;
+			border: none;
+			margin-top: -10px;
+		}
+		input:hover
+		{
+			background-color: white;
+		}
+	#sqc
+	{
+		text-decoration: none;
+			font-size: 17px;
+			color: white;
+			list-style-type: none;
+			float: left;		
+/*			border: 1px solid blue;*/
+			margin: 12.5px 50px auto 0px;
+			text-transform: uppercase;
+	}
+	#sqc:hover
+	{
+		color: chartreuse;
+	}
+</style>
+<script>
+	function tatqc()
+	{
+		var qc = document.getElementById("qc");
+		qc.style.visibility = "hidden";
+	}
+	function moqc()
+	{
+		var qc = document.getElementById("qc");
+		qc.style.visibility = "visible";
+	}
+</script>
+</head>
+
+<body>
+<div id="nearlast">
+<div id="in">
+	
+		<a href="Dieukhoansudung.html" target="new">điều khoản sử dụng</a>
+		<a href="Baocaovipham.html" target="new">quy trình báo cáo vi phạm bản quyền</a>
+		<a href="nguyentac.html" target="new">nguyên tắc cộng đồng</a>
+		<span id="sqc" onClick="moqc()">liên hệ quảng cáo</span>
+		<a href="Assignment_fixing_giaodiensang.html" target="_top">giao diện sáng</a>
+	
+</div>
+
+<div id="last">
+	<div id="logo">
+		<img src="Hình/page-my-movies.png" width="145" height="138">
+	</div>
+	<div id="text">
+		<p>Đơn vị chủ quán: <span style="color: #FF0004">ĐẠI CHỦ TỊCH HỘI ĐỒNG CUỐI LỚP</span>
+		<br>
+		Copyright &#169; BKN_TV-Thank you Teacher</p>
+	</div>
+	<div id="qc">
+		<h3 style="text-align: center">LIÊN HỆ QUẢNG CÁO</h3>
+		<p>
+			ĐIỆN THOẠI: 08-9889 7264
+		</p>
+		<p>
+			EMAIL: contact@bkn.com
+		</p>
+		<input type="button" value="ĐÓNG CỬA SỔ" onClick="tatqc()">
+	</div>
+</div>
+</div>
+</body>
+</html>
